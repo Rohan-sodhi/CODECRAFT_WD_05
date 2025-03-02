@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - CodeCraft InfoTech Internship</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Weather App</h1>
+            <p class="subtitle">CodeCraft InfoTech Internship Project</p>
+        </div>
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter Indian city name..." class="input-field" list="city-list">
+            <datalist id="city-list"></datalist>
+            <button id="search-btn" class="btn search-btn">Search</button>
+            <button id="geo-btn" class="btn geo-btn">Use My Location</button>
+        </div>
+        <div class="loading" id="loading">Loading...</div>
+        <div class="weather-info" id="weather-info">
+            <h2 class="location" id="location">Location</h2>
+            <div class="weather-details">
+                <div class="temp-container">
+                    <img id="weather-icon" alt="Weather Icon" class="weather-icon">
+                    <p class="temperature" id="temperature">0°C</p>
+                </div>
+                <p class="condition" id="condition">Condition</p>
+                <div class="additional-info">
+                    <p class="humidity" id="humidity">Humidity: 0%</p>
+                    <p class="wind" id="wind">Wind: 0 m/s</p>
+                    <p class="pressure" id="pressure">Pressure: 0 hPa</p>
+                </div>
+            </div>
+            <p class="last-updated" id="last-updated">Last Updated: --</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
